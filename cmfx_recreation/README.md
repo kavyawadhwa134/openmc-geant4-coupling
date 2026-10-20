@@ -57,3 +57,42 @@ therefore uses two-stage surface-source splitting:
 The paper's model geometry is in N. R. Schwartz's PhD thesis (UMD, 2024), and
 its measured light-output and resolution functions are in Ball et al., RSI 95,
 123514 (2024). Neither was used here.
+
+## Results
+
+Two layouts: `fig5`, the shielding read off the paper's Fig. 5, and `bunker`, a
+sensitivity case with different shielding. Both use the paper's matrix method
+and the direct event-by-event coupling.
+
+| Per source neutron | Paper | `fig5` matrix | `fig5` direct | `bunker` matrix | `bunker` direct |
+| --- | --- | --- | --- | --- | --- |
+| G: (n,p) scatters | 1.021e-4 | 3.64e-5 ± 0.06e-5 | — | 1.085e-4 ± 0.010e-4 | — |
+| T: above 200 keVee | 0.0389 | 0.100 | 0.094 | 0.083 | 0.077 |
+| **ε = G·T: counts** | **3.97e-6** | **3.65e-6 ± 0.07e-6** | **3.42e-6 ± 0.06e-6** | 9.06e-6 ± 0.10e-6 | 8.38e-6 ± 0.09e-6 |
+
+- **Total efficiency.** The `fig5` layout reproduces the paper's ε to within
+  8 % (matrix) and 14 % (direct).
+- **Factors G and T separately do not match.** G is 2.8 times lower and T 2.6
+  times higher than the paper, and the two errors largely cancel in ε. The
+  scatter spectrum (below) suggests why: about a third of the (n,p) scatters
+  come from neutrons below 1 eV, which can never give a 200 keVee pulse. This
+  model has no air, ceiling or other hall walls, so it likely thermalises fewer
+  neutrons than the real hall. That would lower G and raise T while barely
+  changing ε. In the `bunker` layout G agrees with the paper (+6 %) but ε is
+  2.3 times higher. Comparing G and T one at a time needs the paper's real
+  geometry (Schwartz thesis).
+- **Matrix vs direct.** The direct coupling gives 6–8 % fewer counts than the
+  matrix method in both layouts. The matrix assumes isotropic illumination,
+  while the real neutrons likely arrive from a preferred direction.
+- **Code-to-code check.** Proton recoils above 100 keV per source neutron:
+  OpenMC 1.053e-5, Geant4 on the same neutrons 1.032e-5 (ratio 0.980) for
+  `fig5`; 0.988 for `bunker`.
+
+![CMFX recreation, fig5 layout](results/fig5/cmfx_recreation.png)
+
+Left: OpenMC (n,p) scatter-rate spectrum in the detector, with a thermal peak
+and the 2.45 MeV D-D line. Right: the synthetic pulse-height spectra from the
+two methods, with the 200 keVee threshold.
+
+The `bunker` figure is in
+[`results/bunker/cmfx_recreation.png`](results/bunker/cmfx_recreation.png).

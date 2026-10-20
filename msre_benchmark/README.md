@@ -59,6 +59,32 @@ VII.0 gave 1.09909 ± 0.00073 and VII.1 1.09973 ± 0.00061, a difference of
 the restricted IRPhEP specification details, such as the INOR-8 centring
 bridge this model omits.
 
+### Sensitivity runs (k-eff, ± 1σ statistical)
+
+| Variant | k-eff | Effect vs base | Published |
+| --- | --- | --- | --- |
+| Base model, calibrated basket | 1.03189 ± 0.00066 | | |
+| No thermal shield | 1.02803 ± 0.00062 | −666 ± 90 pcm | −885 pcm |
+| Flat heads at true vessel height | 1.03986 ± 0.00061 | +477 ± 90 pcm | +243 pcm |
+| Support lattice all salt (bound) | 1.03342 ± 0.00072 | −144 ± 96 pcm | — |
+| Edge stringers without channels (bound) | 1.03448 ± 0.00077 | −42 ± 100 pcm | — |
+| Basket → graphite (INOR-8 × 1.0) | | +1318 ± 91 pcm | +1623 pcm |
+| Basket → graphite (calibrated) | 1.04856 ± 0.00064 | +1615 ± 89 pcm | +1623 pcm |
+| Uncalibrated basket | 1.03492 ± 0.00069 | | |
+
+Corrections from the as-modelled 1.03189 to 1.03498: flow distributor +98 pcm,
+homogenised sample basket +37 pcm, all rods withdrawn −70 pcm, domed heads
++234 pcm.
+
+Geometry plots:
+
+| | | |
+| --- | --- | --- |
+| ![xy core](results/xy_core.png) | ![xy centre](results/xy_center.png) | ![xz full](results/xz_full.png) |
+
+Per-run k-eff values are in `results/*/keff.json`, and the exact OpenMC input
+for each run is next to it as `model.xml`.
+
 ```bash
 # library comparison at 293.6 K
 python run_benchmark.py run 911 20000 cold lib=vii0 xs=/path/to/endfb70/cross_sections.xml
