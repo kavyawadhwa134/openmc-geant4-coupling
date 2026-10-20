@@ -1,0 +1,5 @@
+# Large, regenerable outputs (statepoints, surface sources, hand-off arrays)
+results/**/*.h5
+results/**/*.npz
+!results/**/response_matrix.npz
+__pycache__/

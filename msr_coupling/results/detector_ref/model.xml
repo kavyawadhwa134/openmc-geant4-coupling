@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <material id="4" name="He-3 gas">
+      <density units="g/cm3" value="0.000502"/>
+      <nuclide ao="1.0" name="He3"/>
+    </material>
+    <material id="5" name="Al">
+      <density units="g/cm3" value="2.7"/>
+      <nuclide ao="1.0" name="Al27"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="7" material="4" region="-8 10 -11" universe="5"/>
+    <cell id="8" material="5" region="8 -9 10 -11" universe="5"/>
+    <cell id="9" material="void" region="-12 (9 | -10 | 11)" universe="5"/>
+    <surface coeffs="90.0 0.0 1.22" id="8" type="z-cylinder"/>
+    <surface coeffs="90.0 0.0 1.27" id="9" type="z-cylinder"/>
+    <surface coeffs="-15.0" id="10" type="z-plane"/>
+    <surface coeffs="15.0" id="11" type="z-plane"/>
+    <surface boundary="vacuum" coeffs="0.0 0.0 0.0 300" id="12" type="sphere"/>
+  </geometry>
+  <settings>
+    <run_mode>fixed source</run_mode>
+    <particles>97845</particles>
+    <batches>20</batches>
+    <source file="/Users/kavyawadhwa/geant4-python-application/examples/msr_coupling/results/detector_ref/tube_source.h5" strength="1.0" type="file"/>
+    <photon_transport>true</photon_transport>
+  </settings>
+  <tallies>
+    <filter id="1" type="cell">
+      <bins>7</bins>
+    </filter>
+    <tally id="2" name="He3 (n,p)">
+      <filters>1</filters>
+      <scores>(n,p)</scores>
+    </tally>
+  </tallies>
+</model>

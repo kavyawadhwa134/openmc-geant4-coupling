@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <material id="1" name="concrete">
+      <density units="g/cm3" value="2.3"/>
+      <nuclide name="H1" wo="0.02209312264903175"/>
+      <nuclide name="H2" wo="6.877350968250874e-06"/>
+      <nuclide name="C0" wo="0.002484"/>
+      <nuclide name="O16" wo="0.5746984266060383"/>
+      <nuclide name="O17" wo="0.0002315733939617878"/>
+      <nuclide name="Na23" wo="0.015208"/>
+      <nuclide name="Mg24" wo="0.0009863360639149484"/>
+      <nuclide name="Mg25" wo="0.0001304032523909056"/>
+      <nuclide name="Mg26" wo="0.00014926068369414605"/>
+      <nuclide name="Al27" wo="0.019953"/>
+      <nuclide name="Si28" wo="0.2798715394931871"/>
+      <nuclide name="Si29" wo="0.014718815964406412"/>
+      <nuclide name="Si30" wo="0.010036644542406442"/>
+      <nuclide name="K39" wo="0.009335527929552606"/>
+      <nuclide name="K40" wo="1.2012871969376925e-06"/>
+      <nuclide name="K41" wo="0.0007082707832504547"/>
+      <nuclide name="Ca40" wo="0.04151720676721007"/>
+      <nuclide name="Ca42" wo="0.0002909326405278777"/>
+      <nuclide name="Ca43" wo="6.215163600579411e-05"/>
+      <nuclide name="Ca44" wo="0.0009826397780431284"/>
+      <nuclide name="Ca46" wo="1.9699144005446173e-06"/>
+      <nuclide name="Ca48" wo="9.609926381259581e-05"/>
+      <nuclide name="Fe54" wo="0.0003632916716311861"/>
+      <nuclide name="Fe56" wo="0.005913863376964844"/>
+      <nuclide name="Fe57" wo="0.00013901972028996284"/>
+      <nuclide name="Fe58" wo="1.8825231114007384e-05"/>
+    </material>
+    <material id="2" name="plastic">
+      <density units="g/cm3" value="1.032"/>
+      <nuclide name="H1" wo="0.08497354865012212"/>
+      <nuclide name="H2" wo="2.6451349877887975e-05"/>
+      <nuclide name="C0" wo="0.915"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="1" material="1" name="wall" region="5 -40 1 -2 3 -4" universe="1"/>
+    <cell id="2" material="2" name="detector" region="6 -7 1 -2 3 -4" universe="1"/>
+    <cell id="3" material="void" name="void" region="-8 (-5 | 40 | -1 | 2 | -3 | 4) (-6 | 7 | -1 | 2 | -3 | 4)" universe="1"/>
+    <surface coeffs="-50" id="1" type="y-plane"/>
+    <surface coeffs="50" id="2" type="y-plane"/>
+    <surface coeffs="-50" id="3" type="z-plane"/>
+    <surface coeffs="50" id="4" type="z-plane"/>
+    <surface coeffs="10" id="5" type="x-plane"/>
+    <surface coeffs="40.5" id="6" type="x-plane"/>
+    <surface coeffs="45.5" id="7" type="x-plane"/>
+    <surface boundary="vacuum" coeffs="0.0 0.0 0.0 150" id="8" type="sphere"/>
+    <surface coeffs="40" id="40" type="x-plane"/>
+  </geometry>
+  <settings>
+    <run_mode>fixed source</run_mode>
+    <particles>20000</particles>
+    <batches>10</batches>
+    <source particle="neutron" strength="1.0" type="independent">
+      <space type="point">
+        <parameters>0 0 0</parameters>
+      </space>
+      <angle reference_uvw="1.0 0.0 0.0" type="monodirectional"/>
+      <energy type="discrete">
+        <parameters>14100000.0 1.0</parameters>
+      </energy>
+    </source>
+    <surf_source_write>
+      <surface_ids>40</surface_ids>
+      <max_particles>10000000</max_particles>
+      <cellfrom>1</cellfrom>
+    </surf_source_write>
+    <photon_transport>true</photon_transport>
+  </settings>
+  <tallies>
+    <filter id="1" type="cell">
+      <bins>2</bins>
+    </filter>
+    <filter id="2" type="particle">
+      <bins>neutron photon electron positron</bins>
+    </filter>
+    <tally id="1" name="detector heating">
+      <filters>1 2</filters>
+      <scores>heating</scores>
+    </tally>
+  </tallies>
+</model>

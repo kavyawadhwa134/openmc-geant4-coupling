@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <material depletable="true" id="1" name="fuel salt" temperature="911.0">
+      <density units="g/cm3" value="2.3275"/>
+      <nuclide name="Li6" wo="0.0004696987862362007"/>
+      <nuclide name="Li7" wo="10.956530301213764"/>
+      <nuclide name="Be9" wo="6.349"/>
+      <nuclide name="Zr90" wo="5.628886104699974"/>
+      <nuclide name="Zr91" wo="1.241190316168718"/>
+      <nuclide name="Zr92" wo="1.9180420434773622"/>
+      <nuclide name="Zr94" wo="1.9860914930435425"/>
+      <nuclide name="Zr96" wo="0.3267900426104053"/>
+      <nuclide name="U234" wo="0.014"/>
+      <nuclide name="U235" wo="1.409"/>
+      <nuclide name="U236" wo="0.006"/>
+      <nuclide name="U238" wo="3.065"/>
+      <nuclide name="Fe54" wo="0.0009145804320785106"/>
+      <nuclide name="Fe56" wo="0.014888047662289117"/>
+      <nuclide name="Fe57" wo="0.00034997971541529107"/>
+      <nuclide name="Fe58" wo="4.739219021708153e-05"/>
+      <nuclide name="Cr50" wo="0.00011686322543611277"/>
+      <nuclide name="Cr52" wo="0.002343582145837685"/>
+      <nuclide name="Cr53" wo="0.00027086043092290515"/>
+      <nuclide name="Cr54" wo="6.86941978032972e-05"/>
+      <nuclide name="Ni58" wo="0.002015931158897697"/>
+      <nuclide name="Ni60" wo="0.0008032788869768868"/>
+      <nuclide name="Ni61" wo="3.55007725589013e-05"/>
+      <nuclide name="Ni62" wo="0.00011504466910461509"/>
+      <nuclide name="Ni64" wo="3.0244512461900098e-05"/>
+      <nuclide name="O16" wo="0.048980263516768784"/>
+      <nuclide name="O17" wo="1.973648323122398e-05"/>
+      <nuclide name="F19" wo="67.02799999999999"/>
+    </material>
+    <material id="2" name="graphite" temperature="911.0">
+      <density units="g/cm3" value="1.86"/>
+      <nuclide name="C0" wo="0.9999992"/>
+      <nuclide name="B10" wo="1.4684396700058607e-07"/>
+      <nuclide name="B11" wo="6.531560329994139e-07"/>
+      <sab name="c_Graphite"/>
+    </material>
+    <material id="4" name="INOR-8" temperature="911.0">
+      <density units="g/cm3" value="8.7745"/>
+      <nuclide name="Ni58" wo="45.694439601681125"/>
+      <nuclide name="Ni60" wo="18.2076547714761"/>
+      <nuclide name="Ni61" wo="0.8046841780017628"/>
+      <nuclide name="Ni62" wo="2.6076791663712755"/>
+      <nuclide name="Ni64" wo="0.6855422824697355"/>
+      <nuclide name="Mo92" wo="2.3854215346670733"/>
+      <nuclide name="Mo94" wo="1.5285241247071049"/>
+      <nuclide name="Mo95" wo="2.669078946135182"/>
+      <nuclide name="Mo96" wo="2.833107179731302"/>
+      <nuclide name="Mo97" wo="1.6451912362801742"/>
+      <nuclide name="Mo98" wo="4.213853300579058"/>
+      <nuclide name="Mo100" wo="1.724823677900106"/>
+      <nuclide name="Cr50" wo="0.2921580635902819"/>
+      <nuclide name="Cr52" wo="5.8589553645942125"/>
+      <nuclide name="Cr53" wo="0.6771510773072629"/>
+      <nuclide name="Cr54" wo="0.171735494508243"/>
+      <nuclide name="Fe54" wo="0.2822779111353428"/>
+      <nuclide name="Fe56" wo="4.595076438978123"/>
+      <nuclide name="Fe57" wo="0.10801843068373182"/>
+      <nuclide name="Fe58" wo="0.014627219202802941"/>
+      <nuclide name="C0" wo="0.06"/>
+    </material>
+    <material depletable="true" id="5" name="lower head" temperature="911.0">
+      <density units="g/cm3" value="2.9206239999999997"/>
+      <nuclide ao="1.191381946263712e-05" name="Li6"/>
+      <nuclide ao="0.23826449583726284" name="Li7"/>
+      <nuclide ao="0.10748587674883854" name="Be9"/>
+      <nuclide ao="0.00955248033016583" name="Zr90"/>
+      <nuclide ao="0.0020831648066950564" name="Zr91"/>
+      <nuclide ao="0.0031841601100552775" name="Zr92"/>
+      <nuclide ao="0.0032268631319394003" name="Zr94"/>
+      <nuclide ao="0.0005198628751110658" name="Zr96"/>
+      <nuclide ao="9.126668239017281e-06" name="U234"/>
+      <nuclide ao="0.0009146144059886483" name="U235"/>
+      <nuclide ao="3.878211451257681e-06" name="U236"/>
+      <nuclide ao="0.001964431721348887" name="U238"/>
+      <nuclide ao="0.0003168111193842397" name="Fe54"/>
+      <nuclide ao="0.00497325704841429" name="Fe56"/>
+      <nuclide ao="0.00011485419366556099" name="Fe57"/>
+      <nuclide ao="1.52849847162285e-05" name="Fe58"/>
+      <nuclide ao="0.0003515834737617814" name="Cr50"/>
+      <nuclide ao="0.0067799373263580905" name="Cr52"/>
+      <nuclide ao="0.0007687904681727699" name="Cr53"/>
+      <nuclide ao="0.00019136821989565326" name="Cr54"/>
+      <nuclide ao="0.047362969975431775" name="Ni58"/>
+      <nuclide ao="0.01824413123927125" name="Ni60"/>
+      <nuclide ao="0.0007930597526472954" name="Ni61"/>
+      <nuclide ao="0.002528621520305813" name="Ni62"/>
+      <nuclide ao="0.0006439653540225783" name="Ni64"/>
+      <nuclide ao="0.0004672133807208536" name="O16"/>
+      <nuclide ao="1.7714100773513514e-07" name="O17"/>
+      <nuclide ao="0.5382886746145236" name="F19"/>
+      <nuclide ao="0.001558432218879313" name="Mo92"/>
+      <nuclide ao="0.000977357962648935" name="Mo94"/>
+      <nuclide ao="0.001688647321337384" name="Mo95"/>
+      <nuclide ao="0.0017737552314406981" name="Mo96"/>
+      <nuclide ao="0.0010193799932624466" name="Mo97"/>
+      <nuclide ao="0.002584301690287137" name="Mo98"/>
+      <nuclide ao="0.0010366143450583675" name="Mo100"/>
+      <nuclide ao="0.0002999427582279472" name="C0"/>
+    </material>
+    <material depletable="true" id="6" name="support lattice" temperature="911.0">
+      <density units="g/cm3" value="1.9768750000000004"/>
+      <nuclide ao="0.7707033681395149" name="C0"/>
+      <nuclide ao="1.3575804220208667e-07" name="B10"/>
+      <nuclide ao="5.491967620465847e-07" name="B11"/>
+      <nuclide ao="3.0150974945243246e-06" name="Li6"/>
+      <nuclide ao="0.060298939956743056" name="Li7"/>
+      <nuclide ao="0.027202057131931585" name="Be9"/>
+      <nuclide ao="0.0024175000804990084" name="Zr90"/>
+      <nuclide ao="0.0005271982682837489" name="Zr91"/>
+      <nuclide ao="0.0008058333601663361" name="Zr92"/>
+      <nuclide ao="0.0008166404547924735" name="Zr94"/>
+      <nuclide ao="0.0001315646302312386" name="Zr96"/>
+      <nuclide ao="2.3097374126839993e-06" name="U234"/>
+      <nuclide ao="0.00023146662685299927" name="U235"/>
+      <nuclide ao="9.814808480683736e-07" name="U236"/>
+      <nuclide ao="0.0004971498166291746" name="U238"/>
+      <nuclide ao="6.546972910137612e-07" name="Fe54"/>
+      <nuclide ao="1.0277347346394635e-05" name="Fe56"/>
+      <nuclide ao="2.3734876983030966e-07" name="Fe57"/>
+      <nuclide ao="3.158676408312756e-08" name="Fe58"/>
+      <nuclide ao="9.034481128250579e-08" name="Cr50"/>
+      <nuclide ao="1.74220975662828e-06" name="Cr52"/>
+      <nuclide ao="1.975526011496174e-07" name="Cr53"/>
+      <nuclide ao="4.917502386262973e-08" name="Cr54"/>
+      <nuclide ao="1.3435645959967112e-06" name="Ni58"/>
+      <nuclide ao="5.175386769562267e-07" name="Ni60"/>
+      <nuclide ao="2.2497047941029194e-08" name="Ni61"/>
+      <nuclide ao="7.173043314472379e-08" name="Ni62"/>
+      <nuclide ao="1.8267626611296285e-08" name="Ni64"/>
+      <nuclide ao="0.00011824032570222203" name="O16"/>
+      <nuclide ao="4.4830074039203016e-08" name="O17"/>
+      <nuclide ao="0.13622775124727468" name="F19"/>
+      <sab name="c_Graphite"/>
+    </material>
+    <material id="10" name="thermal shield" temperature="305.0">
+      <density units="g/cm3" value="5.108"/>
+      <nuclide ao="0.03219940281557519" name="Fe54"/>
+      <nuclide ao="0.5054617632062082" name="Fe56"/>
+      <nuclide ao="0.011673316435620846" name="Fe57"/>
+      <nuclide ao="0.001553504122154355" name="Fe58"/>
+      <nuclide ao="0.005667853080272131" name="Mn55"/>
+      <nuclide ao="0.005184876711185268" name="C0"/>
+      <nuclide ao="0.29212735275210105" name="H1"/>
+      <nuclide ao="4.550300055491865e-05" name="H2"/>
+      <nuclide ao="0.14603106112016287" name="O16"/>
+      <nuclide ao="5.5366756165128314e-05" name="O17"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="1" material="1" name="channel" region="(1 -2 3 -4) | (-5 | -6) | (7 -8 9 -10) | (-11 | -12) | (13 -14 15 -16) | (-17 | -18) | (19 -20 21 -22) | (-23 | -24)" universe="2"/>
+    <cell id="2" material="2" name="stringer" region="(-1 | 2 | -3 | 4) (5 6) (-7 | 8 | -9 | 10) (11 12) (-13 | 14 | -15 | 16) (17 18) (-19 | 20 | -21 | 22) (23 24)" universe="2"/>
+    <cell id="4" material="void" name="thimble inside" region="-42 25 -26" universe="4"/>
+    <cell id="5" material="4" name="thimble wall" region="42 -41 25 -26" universe="4"/>
+    <cell id="6" material="1" name="channel salt" region="41 -43 25 -26" universe="4"/>
+    <cell id="7" material="void" name="thimble inside" region="-45 25 -26" universe="4"/>
+    <cell id="8" material="4" name="thimble wall" region="45 -44 25 -26" universe="4"/>
+    <cell id="9" material="1" name="channel salt" region="44 -46 25 -26" universe="4"/>
+    <cell id="10" material="void" name="thimble inside" region="-48 25 -26" universe="4"/>
+    <cell id="11" material="4" name="thimble wall" region="48 -47 25 -26" universe="4"/>
+    <cell id="12" material="1" name="channel salt" region="47 -49 25 -26" universe="4"/>
+    <cell id="13" material="2" name="basket graphite" region="-51 25 -26" universe="4"/>
+    <cell fill="1" id="14" name="graphite lattice" region="-32 25 -26 37 38 39 40" universe="4"/>
+    <cell id="15" material="1" name="lattice edge salt" region="32 -33 25 -26" universe="4"/>
+    <cell id="16" material="6" name="support lattice" region="-33 27 -25" universe="4"/>
+    <cell id="17" material="4" name="core can" region="33 -34 27 -26" universe="4"/>
+    <cell id="18" material="1" name="downcomer" region="34 -35 27 -26" universe="4"/>
+    <cell id="19" material="5" name="lower head" region="-35 28 -27" universe="4"/>
+    <cell id="20" material="1" name="upper head" region="-35 26 -29" universe="4"/>
+    <cell id="21" material="4" name="vessel" region="-36 30 -31 (35 | -28 | 29)" universe="4"/>
+    <cell id="22" material="10" name="thermal shield" region="54 -55 52 -53" universe="4"/>
+    <cell id="23" material="void" name="cell void" region="-56 (36 | -30 | 31) (-54 | 55 | -52 | 53)" universe="4"/>
+    <lattice id="1" name="stringers">
+      <pitch>5.08339 5.08339</pitch>
+      <outer>2</outer>
+      <dimension>31 31</dimension>
+      <lower_left>-78.79254499999999 -78.79254499999999</lower_left>
+      <universes>
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 </universes>
+    </lattice>
+    <surface coeffs="2.032845" id="1" type="x-plane"/>
+    <surface coeffs="3.0505449999999996" id="2" type="x-plane"/>
+    <surface coeffs="-1.017695" id="3" type="y-plane"/>
+    <surface coeffs="1.017695" id="4" type="y-plane"/>
+    <surface coeffs="2.541695 1.017695 0.50885" id="5" type="z-cylinder"/>
+    <surface coeffs="2.541695 -1.017695 0.50885" id="6" type="z-cylinder"/>
+    <surface coeffs="-3.0505449999999996" id="7" type="x-plane"/>
+    <surface coeffs="-2.032845" id="8" type="x-plane"/>
+    <surface coeffs="-1.017695" id="9" type="y-plane"/>
+    <surface coeffs="1.017695" id="10" type="y-plane"/>
+    <surface coeffs="-2.541695 1.017695 0.50885" id="11" type="z-cylinder"/>
+    <surface coeffs="-2.541695 -1.017695 0.50885" id="12" type="z-cylinder"/>
+    <surface coeffs="2.032845" id="13" type="y-plane"/>
+    <surface coeffs="3.0505449999999996" id="14" type="y-plane"/>
+    <surface coeffs="-1.017695" id="15" type="x-plane"/>
+    <surface coeffs="1.017695" id="16" type="x-plane"/>
+    <surface coeffs="1.017695 2.541695 0.50885" id="17" type="z-cylinder"/>
+    <surface coeffs="-1.017695 2.541695 0.50885" id="18" type="z-cylinder"/>
+    <surface coeffs="-3.0505449999999996" id="19" type="y-plane"/>
+    <surface coeffs="-2.032845" id="20" type="y-plane"/>
+    <surface coeffs="-1.017695" id="21" type="x-plane"/>
+    <surface coeffs="1.017695" id="22" type="x-plane"/>
+    <surface coeffs="1.017695 -2.541695 0.50885" id="23" type="z-cylinder"/>
+    <surface coeffs="-1.017695 -2.541695 0.50885" id="24" type="z-cylinder"/>
+    <surface coeffs="5.08" id="25" type="z-plane"/>
+    <surface coeffs="171.804" id="26" type="z-plane"/>
+    <surface coeffs="0.0" id="27" type="z-plane"/>
+    <surface coeffs="-17.971518618933178" id="28" type="z-plane"/>
+    <surface coeffs="188.92939666105804" id="29" type="z-plane"/>
+    <surface coeffs="-20.533557487733177" id="30" type="z-plane"/>
+    <surface coeffs="191.49143552985802" id="31" type="z-plane"/>
+    <surface coeffs="0.0 0.0 70.285" id="32" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 71.097" id="33" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 71.737" id="34" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 74.299" id="35" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 76.862" id="36" type="z-cylinder"/>
+    <surface coeffs="5.08339 5.08339 3.1992" id="37" type="z-cylinder"/>
+    <surface coeffs="-5.08339 5.08339 3.1992" id="38" type="z-cylinder"/>
+    <surface coeffs="-5.08339 -5.08339 3.1992" id="39" type="z-cylinder"/>
+    <surface coeffs="5.08339 -5.08339 3.1992" id="40" type="z-cylinder"/>
+    <surface coeffs="5.08339 5.08339 2.5620388687999998" id="41" type="z-cylinder"/>
+    <surface coeffs="5.08339 5.08339 2.395506342328" id="42" type="z-cylinder"/>
+    <surface coeffs="5.08339 5.08339 3.1992" id="43" type="z-cylinder"/>
+    <surface coeffs="-5.08339 5.08339 2.5620388687999998" id="44" type="z-cylinder"/>
+    <surface coeffs="-5.08339 5.08339 2.395506342328" id="45" type="z-cylinder"/>
+    <surface coeffs="-5.08339 5.08339 3.1992" id="46" type="z-cylinder"/>
+    <surface coeffs="-5.08339 -5.08339 2.5620388687999998" id="47" type="z-cylinder"/>
+    <surface coeffs="-5.08339 -5.08339 2.395506342328" id="48" type="z-cylinder"/>
+    <surface coeffs="-5.08339 -5.08339 3.1992" id="49" type="z-cylinder"/>
+    <surface coeffs="5.08339 -5.08339 3.1992" id="51" type="z-cylinder"/>
+    <surface coeffs="-106.29106097893758" id="52" type="z-plane"/>
+    <surface coeffs="277.2489390210624" id="53" type="z-plane"/>
+    <surface coeffs="0.0 0.0 118.11" id="54" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 158.75" id="55" type="z-cylinder"/>
+    <surface boundary="vacuum" coeffs="0.0 0.0 85.47893902106243 260.0" id="56" type="sphere"/>
+  </geometry>
+  <settings>
+    <run_mode>eigenvalue</run_mode>
+    <particles>20000</particles>
+    <batches>150</batches>
+    <inactive>30</inactive>
+    <source particle="neutron" strength="1.0" type="independent">
+      <space type="box">
+        <parameters>-50 -50 28.442000000000007 50 50 148.442</parameters>
+      </space>
+      <constraints>
+        <fissionable>true</fissionable>
+      </constraints>
+    </source>
+    <temperature_default>911.0</temperature_default>
+    <temperature_method>interpolation</temperature_method>
+  </settings>
+  </model>

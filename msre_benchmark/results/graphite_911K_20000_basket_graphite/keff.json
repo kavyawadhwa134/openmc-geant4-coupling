@@ -1,0 +1,11 @@
+{
+ "graphite_K": 911.0,
+ "particles": 20000,
+ "thermal_shield": true,
+ "variant": "basket_graphite",
+ "batches": 150,
+ "inactive": 30,
+ "keff": 1.0485575498926414,
+ "keff_std": 0.0006356185437789521,
+ "runtime_s": 251.764703167
+}

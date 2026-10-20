@@ -1,0 +1,270 @@
+ =================>     TALLY 1: NP SCATTER SPECTRUM     <==================
+
+ Cell 10
+   Incoming Energy [1e-05, 1.778279410038923e-05)
+     H1
+       (n,elastic)                          0 +/- 0
+   Incoming Energy [1.778279410038923e-05, 3.1622776601683795e-05)
+     H1
+       (n,elastic)                          0 +/- 0
+   Incoming Energy [3.1622776601683795e-05, 5.623413251903491e-05)
+     H1
+       (n,elastic)                          9.3256e-08 +/- 9.3256e-08
+   Incoming Energy [5.623413251903491e-05, 0.0001)
+     H1
+       (n,elastic)                          7.80761e-08 +/- 7.80761e-08
+   Incoming Energy [0.0001, 0.00017782794100389227)
+     H1
+       (n,elastic)                          0 +/- 0
+   Incoming Energy [0.00017782794100389227, 0.00031622776601683794)
+     H1
+       (n,elastic)                          1.65514e-07 +/- 1.14186e-07
+   Incoming Energy [0.00031622776601683794, 0.0005623413251903491)
+     H1
+       (n,elastic)                          6.10472e-07 +/- 3.28647e-07
+   Incoming Energy [0.0005623413251903491, 0.001)
+     H1
+       (n,elastic)                          1.46664e-06 +/- 5.31802e-07
+   Incoming Energy [0.001, 0.0017782794100389228)
+     H1
+       (n,elastic)                          6.14053e-06 +/- 1.2411e-06
+   Incoming Energy [0.0017782794100389228, 0.0031622776601683794)
+     H1
+       (n,elastic)                          1.8785e-05 +/- 3.16766e-06
+   Incoming Energy [0.0031622776601683794, 0.005623413251903491)
+     H1
+       (n,elastic)                          3.71595e-05 +/- 3.87407e-06
+   Incoming Energy [0.005623413251903491, 0.01)
+     H1
+       (n,elastic)                          9.27216e-05 +/- 7.42218e-06
+   Incoming Energy [0.01, 0.01778279410038923)
+     H1
+       (n,elastic)                          0.000208027 +/- 1.14977e-05
+   Incoming Energy [0.01778279410038923, 0.03162277660168379)
+     H1
+       (n,elastic)                          0.000308127 +/- 1.12635e-05
+   Incoming Energy [0.03162277660168379, 0.05623413251903491)
+     H1
+       (n,elastic)                          0.000372854 +/- 1.54852e-05
+   Incoming Energy [0.05623413251903491, 0.1)
+     H1
+       (n,elastic)                          0.000342636 +/- 1.66449e-05
+   Incoming Energy [0.1, 0.1778279410038923)
+     H1
+       (n,elastic)                          0.000138028 +/- 9.78513e-06
+   Incoming Energy [0.1778279410038923, 0.31622776601683794)
+     H1
+       (n,elastic)                          4.88681e-05 +/- 4.673e-06
+   Incoming Energy [0.31622776601683794, 0.5623413251903491)
+     H1
+       (n,elastic)                          4.36267e-05 +/- 3.89994e-06
+   Incoming Energy [0.5623413251903491, 1)
+     H1
+       (n,elastic)                          5.0711e-05 +/- 2.35772e-06
+   Incoming Energy [1, 1.7782794100389228)
+     H1
+       (n,elastic)                          5.19619e-05 +/- 4.24799e-06
+   Incoming Energy [1.7782794100389228, 3.1622776601683795)
+     H1
+       (n,elastic)                          5.18149e-05 +/- 4.52306e-06
+   Incoming Energy [3.1622776601683795, 5.623413251903491)
+     H1
+       (n,elastic)                          6.37013e-05 +/- 4.54253e-06
+   Incoming Energy [5.623413251903491, 10)
+     H1
+       (n,elastic)                          9.26677e-05 +/- 5.52279e-06
+   Incoming Energy [10, 17.78279410038923)
+     H1
+       (n,elastic)                          7.72777e-05 +/- 5.09083e-06
+   Incoming Energy [17.78279410038923, 31.622776601683793)
+     H1
+       (n,elastic)                          6.22015e-05 +/- 4.17105e-06
+   Incoming Energy [31.622776601683793, 56.23413251903491)
+     H1
+       (n,elastic)                          6.19892e-05 +/- 3.76193e-06
+   Incoming Energy [56.23413251903491, 100)
+     H1
+       (n,elastic)                          5.28259e-05 +/- 4.59757e-06
+   Incoming Energy [100, 177.82794100389228)
+     H1
+       (n,elastic)                          5.85216e-05 +/- 3.72034e-06
+   Incoming Energy [177.82794100389228, 316.22776601683796)
+     H1
+       (n,elastic)                          5.91611e-05 +/- 4.20424e-06
+   Incoming Energy [316.22776601683796, 562.341325190349)
+     H1
+       (n,elastic)                          6.17498e-05 +/- 3.72817e-06
+   Incoming Energy [562.341325190349, 1000)
+     H1
+       (n,elastic)                          7.66356e-05 +/- 5.51028e-06
+   Incoming Energy [1000, 1778.2794100389228)
+     H1
+       (n,elastic)                          7.12973e-05 +/- 5.79646e-06
+   Incoming Energy [1778.2794100389228, 3162.2776601683795)
+     H1
+       (n,elastic)                          8.32725e-05 +/- 3.90283e-06
+   Incoming Energy [3162.2776601683795, 5623.413251903491)
+     H1
+       (n,elastic)                          9.18395e-05 +/- 5.19327e-06
+   Incoming Energy [5623.413251903491, 10000)
+     H1
+       (n,elastic)                          0.000113298 +/- 6.57052e-06
+   Incoming Energy [10000, 17782.794100389227)
+     H1
+       (n,elastic)                          9.46855e-05 +/- 6.00401e-06
+   Incoming Energy [17782.794100389227, 31622.776601683792)
+     H1
+       (n,elastic)                          0.000116639 +/- 7.00938e-06
+   Incoming Energy [31622.776601683792, 56234.13251903491)
+     H1
+       (n,elastic)                          9.61319e-05 +/- 5.05569e-06
+   Incoming Energy [56234.13251903491, 100000)
+     H1
+       (n,elastic)                          0.000131201 +/- 5.97347e-06
+   Incoming Energy [100000, 200000)
+     H1
+       (n,elastic)                          0.000173254 +/- 4.88734e-06
+   Incoming Energy [200000, 250000)
+     H1
+       (n,elastic)                          4.95203e-05 +/- 3.35672e-06
+   Incoming Energy [250000, 300000)
+     H1
+       (n,elastic)                          5.74444e-05 +/- 2.39657e-06
+   Incoming Energy [300000, 350000)
+     H1
+       (n,elastic)                          4.75354e-05 +/- 3.57242e-06
+   Incoming Energy [350000, 400000)
+     H1
+       (n,elastic)                          4.32032e-05 +/- 2.45726e-06
+   Incoming Energy [400000, 450000)
+     H1
+       (n,elastic)                          2.38394e-05 +/- 1.57963e-06
+   Incoming Energy [450000, 500000)
+     H1
+       (n,elastic)                          2.35378e-05 +/- 2.19456e-06
+   Incoming Energy [500000, 550000)
+     H1
+       (n,elastic)                          4.70804e-05 +/- 3.90527e-06
+   Incoming Energy [550000, 600000)
+     H1
+       (n,elastic)                          1.87478e-05 +/- 1.53307e-06
+   Incoming Energy [600000, 650000)
+     H1
+       (n,elastic)                          2.37795e-05 +/- 2.13564e-06
+   Incoming Energy [650000, 700000)
+     H1
+       (n,elastic)                          2.89538e-05 +/- 2.37856e-06
+   Incoming Energy [700000, 750000)
+     H1
+       (n,elastic)                          1.51311e-05 +/- 1.48374e-06
+   Incoming Energy [750000, 800000)
+     H1
+       (n,elastic)                          3.23696e-05 +/- 1.73646e-06
+   Incoming Energy [800000, 850000)
+     H1
+       (n,elastic)                          3.13936e-05 +/- 2.29195e-06
+   Incoming Energy [850000, 900000)
+     H1
+       (n,elastic)                          2.16462e-05 +/- 1.44274e-06
+   Incoming Energy [900000, 950000)
+     H1
+       (n,elastic)                          2.88216e-05 +/- 1.8981e-06
+   Incoming Energy [950000, 1000000)
+     H1
+       (n,elastic)                          1.91308e-05 +/- 1.47925e-06
+   Incoming Energy [1000000, 1050000)
+     H1
+       (n,elastic)                          9.21117e-06 +/- 1.0342e-06
+   Incoming Energy [1050000, 1100000)
+     H1
+       (n,elastic)                          2.07273e-05 +/- 1.69795e-06
+   Incoming Energy [1100000, 1150000)
+     H1
+       (n,elastic)                          8.76201e-06 +/- 9.39853e-07
+   Incoming Energy [1150000, 1200000)
+     H1
+       (n,elastic)                          9.15075e-06 +/- 1.06265e-06
+   Incoming Energy [1200000, 1250000)
+     H1
+       (n,elastic)                          1.96893e-05 +/- 1.46482e-06
+   Incoming Energy [1250000, 1300000)
+     H1
+       (n,elastic)                          1.78316e-05 +/- 1.66503e-06
+   Incoming Energy [1300000, 1350000)
+     H1
+       (n,elastic)                          6.8315e-06 +/- 7.93091e-07
+   Incoming Energy [1350000, 1400000)
+     H1
+       (n,elastic)                          8.08804e-06 +/- 9.17279e-07
+   Incoming Energy [1400000, 1450000)
+     H1
+       (n,elastic)                          8.45636e-06 +/- 7.08042e-07
+   Incoming Energy [1450000, 1500000)
+     H1
+       (n,elastic)                          2.66527e-05 +/- 1.65919e-06
+   Incoming Energy [1500000, 1550000)
+     H1
+       (n,elastic)                          8.87336e-06 +/- 7.13446e-07
+   Incoming Energy [1550000, 1600000)
+     H1
+       (n,elastic)                          4.91029e-06 +/- 8.79957e-07
+   Incoming Energy [1600000, 1650000)
+     H1
+       (n,elastic)                          6.09543e-06 +/- 8.40927e-07
+   Incoming Energy [1650000, 1700000)
+     H1
+       (n,elastic)                          5.02472e-06 +/- 6.84338e-07
+   Incoming Energy [1700000, 1750000)
+     H1
+       (n,elastic)                          5.62256e-06 +/- 7.74973e-07
+   Incoming Energy [1750000, 1800000)
+     H1
+       (n,elastic)                          9.53898e-06 +/- 8.02628e-07
+   Incoming Energy [1800000, 1850000)
+     H1
+       (n,elastic)                          9.09046e-06 +/- 1.05462e-06
+   Incoming Energy [1850000, 1900000)
+     H1
+       (n,elastic)                          7.67044e-06 +/- 6.76514e-07
+   Incoming Energy [1900000, 1950000)
+     H1
+       (n,elastic)                          8.49872e-06 +/- 8.44455e-07
+   Incoming Energy [1950000, 2000000)
+     H1
+       (n,elastic)                          8.46015e-06 +/- 7.95955e-07
+   Incoming Energy [2000000, 2050000)
+     H1
+       (n,elastic)                          8.94102e-06 +/- 9.28412e-07
+   Incoming Energy [2050000, 2100000)
+     H1
+       (n,elastic)                          1.71987e-05 +/- 1.07086e-06
+   Incoming Energy [2100000, 2150000)
+     H1
+       (n,elastic)                          1.91315e-05 +/- 1.00558e-06
+   Incoming Energy [2150000, 2200000)
+     H1
+       (n,elastic)                          1.49348e-05 +/- 1.199e-06
+   Incoming Energy [2200000, 2250000)
+     H1
+       (n,elastic)                          1.05934e-05 +/- 8.58038e-07
+   Incoming Energy [2250000, 2300000)
+     H1
+       (n,elastic)                          3.41506e-05 +/- 2.19589e-06
+   Incoming Energy [2300000, 2350000)
+     H1
+       (n,elastic)                          2.02435e-05 +/- 1.38108e-06
+   Incoming Energy [2350000, 2400000)
+     H1
+       (n,elastic)                          2.45944e-05 +/- 1.37633e-06
+   Incoming Energy [2400000, 2450000)
+     H1
+       (n,elastic)                          0.000322193 +/- 4.5898e-06
+   Incoming Energy [2450000, 2500000)
+     H1
+       (n,elastic)                          0 +/- 0
+   Incoming Energy [2500000, 2550000)
+     H1
+       (n,elastic)                          0 +/- 0
+   Incoming Energy [2550000, 2600000)
+     H1
+       (n,elastic)                          0 +/- 0

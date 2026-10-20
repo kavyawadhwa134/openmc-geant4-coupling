@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <material depletable="true" id="1" name="fuel salt">
+      <density units="g/cm3" value="2.27"/>
+      <nuclide ao="0.6499675" name="Li7"/>
+      <nuclide ao="3.2500000000000004e-05" name="Li6"/>
+      <nuclide ao="0.291" name="Be9"/>
+      <nuclide ao="0.025724999999999998" name="Zr90"/>
+      <nuclide ao="0.00561" name="Zr91"/>
+      <nuclide ao="0.008575000000000001" name="Zr92"/>
+      <nuclide ao="0.008690000000000002" name="Zr94"/>
+      <nuclide ao="0.0014000000000000002" name="Zr96"/>
+      <nuclide ao="0.0029953799999999997" name="U235"/>
+      <nuclide ao="0.00600462" name="U238"/>
+      <nuclide ao="1.468" name="F19"/>
+    </material>
+    <material id="2" name="graphite">
+      <density units="g/cm3" value="1.86"/>
+      <nuclide ao="1.0" name="C0"/>
+      <sab name="c_Graphite"/>
+    </material>
+    <material id="3" name="Hastelloy-N">
+      <density units="g/cm3" value="8.86"/>
+      <nuclide name="Ni58" wo="0.47710370760578824"/>
+      <nuclide name="Ni60" wo="0.19010933658452986"/>
+      <nuclide name="Ni61" wo="0.008401849505606641"/>
+      <nuclide name="Ni62" wo="0.027227238354758904"/>
+      <nuclide name="Ni64" wo="0.007157867949316356"/>
+      <nuclide name="Mo92" wo="0.022451026208631278"/>
+      <nuclide name="Mo94" wo="0.014386109409008046"/>
+      <nuclide name="Mo95" wo="0.025120743022448773"/>
+      <nuclide name="Mo96" wo="0.026664538162176957"/>
+      <nuclide name="Mo97" wo="0.015484152812048697"/>
+      <nuclide name="Mo98" wo="0.03965979577015584"/>
+      <nuclide name="Mo100" wo="0.01623363461553041"/>
+      <nuclide name="Cr50" wo="0.0029215806359028196"/>
+      <nuclide name="Cr52" wo="0.058589553645942136"/>
+      <nuclide name="Cr53" wo="0.006771510773072629"/>
+      <nuclide name="Cr54" wo="0.00171735494508243"/>
+      <nuclide name="Fe54" wo="0.002822779111353428"/>
+      <nuclide name="Fe56" wo="0.04595076438978123"/>
+      <nuclide name="Fe57" wo="0.0010801843068373182"/>
+      <nuclide name="Fe58" wo="0.00014627219202802943"/>
+      <nuclide name="Si28" wo="0.009187351728283676"/>
+      <nuclide name="Si29" wo="0.0004831750292786396"/>
+      <nuclide name="Si30" wo="0.00032947324243768423"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="1" material="1" region="-1" universe="1"/>
+    <cell id="2" material="2" region="1" universe="1"/>
+    <cell id="3" material="2" universe="3"/>
+    <cell fill="2" id="4" name="core" region="-2 3 -4" universe="4"/>
+    <cell id="5" material="3" name="vessel" region="-100 5 -6 (2 | -3 | 4)" universe="4"/>
+    <cell id="6" material="void" name="outside" region="-7 (100 | -5 | 6)" universe="4"/>
+    <lattice id="2">
+      <pitch>5.08 5.08</pitch>
+      <outer>3</outer>
+      <dimension>28 28</dimension>
+      <lower_left>-71.12 -71.12</lower_left>
+      <universes>
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </universes>
+    </lattice>
+    <surface coeffs="0.0 0.0 1.35" id="1" type="z-cylinder"/>
+    <surface coeffs="0.0 0.0 70" id="2" type="z-cylinder"/>
+    <surface coeffs="-80" id="3" type="z-plane"/>
+    <surface coeffs="80" id="4" type="z-plane"/>
+    <surface coeffs="-82.5" id="5" type="z-plane"/>
+    <surface coeffs="82.5" id="6" type="z-plane"/>
+    <surface boundary="vacuum" coeffs="0.0 0.0 0.0 300" id="7" type="sphere"/>
+    <surface coeffs="0.0 0.0 72.5" id="100" type="z-cylinder"/>
+  </geometry>
+  <settings>
+    <run_mode>eigenvalue</run_mode>
+    <particles>20000</particles>
+    <batches>60</batches>
+    <inactive>15</inactive>
+    <source particle="neutron" strength="1.0" type="independent">
+      <space type="box">
+        <parameters>-70 -70 -80 70 70 80</parameters>
+      </space>
+      <constraints>
+        <fissionable>true</fissionable>
+      </constraints>
+    </source>
+    <surf_source_write>
+      <surface_ids>100</surface_ids>
+      <max_particles>20000000</max_particles>
+      <cellfrom>5</cellfrom>
+    </surf_source_write>
+    <photon_transport>true</photon_transport>
+  </settings>
+  <tallies>
+    <tally id="1" name="kappa-fission">
+      <scores>kappa-fission</scores>
+    </tally>
+  </tallies>
+</model>

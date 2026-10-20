@@ -1,0 +1,15 @@
+ ===================>     TALLY 1: DETECTOR HEATING     <===================
+
+ Cell 2
+   Particle: neutron
+     Total Material
+       heating                              253517 +/- 1319.77
+   Particle: photon
+     Total Material
+       heating                              1193.16 +/- 72.3037
+   Particle: electron
+     Total Material
+       heating                              92070.3 +/- 1363.43
+   Particle: positron
+     Total Material
+       heating                              1234.42 +/- 163.565

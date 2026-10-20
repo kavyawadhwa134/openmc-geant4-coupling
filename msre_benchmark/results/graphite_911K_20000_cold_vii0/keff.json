@@ -1,0 +1,13 @@
+{
+ "graphite_K": 911.0,
+ "particles": 20000,
+ "thermal_shield": true,
+ "variant": "base",
+ "cold": true,
+ "cross_sections": "/Users/kavyawadhwa/openmc/mcnp_endfb70/cross_sections.xml",
+ "batches": 150,
+ "inactive": 30,
+ "keff": 1.0990916109375568,
+ "keff_std": 0.0007271282344153086,
+ "runtime_s": 184.92067541699998
+}

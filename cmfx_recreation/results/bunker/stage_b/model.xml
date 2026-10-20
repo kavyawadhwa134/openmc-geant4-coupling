@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <material id="1" name="SS304">
+      <density units="g/cm3" value="8.0"/>
+      <nuclide name="Fe54" wo="0.039236629647812646"/>
+      <nuclide name="Fe56" wo="0.6387156250179591"/>
+      <nuclide name="Fe57" wo="0.015014561865038722"/>
+      <nuclide name="Fe58" wo="0.0020331834691896086"/>
+      <nuclide name="Cr50" wo="0.007930004583164795"/>
+      <nuclide name="Cr52" wo="0.1590287884675572"/>
+      <nuclide name="Cr53" wo="0.01837981495548285"/>
+      <nuclide name="Cr54" wo="0.004661391993795167"/>
+      <nuclide name="Ni58" wo="0.0638378200317604"/>
+      <nuclide name="Ni60" wo="0.025437164754268084"/>
+      <nuclide name="Ni61" wo="0.0011241911310318747"/>
+      <nuclide name="Ni62" wo="0.0036430811883128114"/>
+      <nuclide name="Ni64" wo="0.0009577428946268364"/>
+      <nuclide name="Mn55" wo="0.02"/>
+    </material>
+    <material id="2" name="magnet">
+      <density units="g/cm3" value="4.19"/>
+      <nuclide name="Fe54" wo="0.022469321726373285"/>
+      <nuclide name="Fe56" wo="0.3657680845426586"/>
+      <nuclide name="Fe57" wo="0.008598267082425054"/>
+      <nuclide name="Fe58" wo="0.0011643266485431142"/>
+      <nuclide name="Cr50" wo="0.004549318418762961"/>
+      <nuclide name="Cr52" wo="0.09123230496296703"/>
+      <nuclide name="Cr53" wo="0.010544209632355951"/>
+      <nuclide name="Cr54" wo="0.0026741669859140695"/>
+      <nuclide name="Ni58" wo="0.03628676086015854"/>
+      <nuclide name="Ni60" wo="0.014459019965583962"/>
+      <nuclide name="Ni61" wo="0.0006390139060602235"/>
+      <nuclide name="Ni62" wo="0.0020708040438830715"/>
+      <nuclide name="Ni64" wo="0.0005444012243142017"/>
+      <nuclide name="Mn55" wo="0.011"/>
+      <nuclide name="Cu63" wo="0.29309095547842295"/>
+      <nuclide name="Cu65" wo="0.13490904452157707"/>
+    </material>
+    <material id="3" name="concrete">
+      <density units="g/cm3" value="2.3"/>
+      <nuclide name="H1" wo="0.02209312264903175"/>
+      <nuclide name="H2" wo="6.877350968250874e-06"/>
+      <nuclide name="C0" wo="0.002484"/>
+      <nuclide name="O16" wo="0.5746984266060383"/>
+      <nuclide name="O17" wo="0.0002315733939617878"/>
+      <nuclide name="Na23" wo="0.015208"/>
+      <nuclide name="Mg24" wo="0.0009863360639149484"/>
+      <nuclide name="Mg25" wo="0.0001304032523909056"/>
+      <nuclide name="Mg26" wo="0.00014926068369414605"/>
+      <nuclide name="Al27" wo="0.019953"/>
+      <nuclide name="Si28" wo="0.2798715394931871"/>
+      <nuclide name="Si29" wo="0.014718815964406412"/>
+      <nuclide name="Si30" wo="0.010036644542406442"/>
+      <nuclide name="K39" wo="0.009335527929552606"/>
+      <nuclide name="K40" wo="1.2012871969376925e-06"/>
+      <nuclide name="K41" wo="0.0007082707832504547"/>
+      <nuclide name="Ca40" wo="0.04151720676721007"/>
+      <nuclide name="Ca42" wo="0.0002909326405278777"/>
+      <nuclide name="Ca43" wo="6.215163600579411e-05"/>
+      <nuclide name="Ca44" wo="0.0009826397780431284"/>
+      <nuclide name="Ca46" wo="1.9699144005446173e-06"/>
+      <nuclide name="Ca48" wo="9.609926381259581e-05"/>
+      <nuclide name="Fe54" wo="0.0003632916716311861"/>
+      <nuclide name="Fe56" wo="0.005913863376964844"/>
+      <nuclide name="Fe57" wo="0.00013901972028996284"/>
+      <nuclide name="Fe58" wo="1.8825231114007384e-05"/>
+    </material>
+    <material id="4" name="EJ-301">
+      <density units="g/cm3" value="0.874"/>
+      <nuclide ao="4.8192493332" name="H1"/>
+      <nuclide ao="0.0007506668" name="H2"/>
+      <nuclide ao="3.98" name="C0"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="10" material="4" name="detector" region="-901 902 -903" universe="2"/>
+    <cell id="11" material="3" name="wall" region="((26 -27 28 -902 29 -30) | (31 -32 33 -902 34 -35) | (36 -37 38 -902 39 -40) | (41 -42 43 -902 44 -45)) -47" universe="2"/>
+    <cell id="12" material="void" name="void" region="-47 (-26 | 27 | -28 | 902 | -29 | 30) (-31 | 32 | -33 | 902 | -34 | 35) (-36 | 37 | -38 | 902 | -39 | 40) (-41 | 42 | -43 | 902 | -44 | 45) (901 | -902 | 903)" universe="2"/>
+    <surface coeffs="290" id="26" type="x-plane"/>
+    <surface coeffs="350" id="27" type="x-plane"/>
+    <surface coeffs="-150" id="28" type="y-plane"/>
+    <surface coeffs="-460" id="29" type="z-plane"/>
+    <surface coeffs="460" id="30" type="z-plane"/>
+    <surface coeffs="-350" id="31" type="x-plane"/>
+    <surface coeffs="-290" id="32" type="x-plane"/>
+    <surface coeffs="-150" id="33" type="y-plane"/>
+    <surface coeffs="-460" id="34" type="z-plane"/>
+    <surface coeffs="460" id="35" type="z-plane"/>
+    <surface coeffs="-290" id="36" type="x-plane"/>
+    <surface coeffs="290" id="37" type="x-plane"/>
+    <surface coeffs="-150" id="38" type="y-plane"/>
+    <surface coeffs="400" id="39" type="z-plane"/>
+    <surface coeffs="460" id="40" type="z-plane"/>
+    <surface coeffs="-290" id="41" type="x-plane"/>
+    <surface coeffs="290" id="42" type="x-plane"/>
+    <surface coeffs="-150" id="43" type="y-plane"/>
+    <surface coeffs="-460" id="44" type="z-plane"/>
+    <surface coeffs="-400" id="45" type="z-plane"/>
+    <surface boundary="vacuum" coeffs="292.54 102.54 0.0 60.0" id="47" type="sphere"/>
+    <surface coeffs="292.54 0 2.54" id="901" type="y-cylinder"/>
+    <surface coeffs="100.0" id="902" type="y-plane"/>
+    <surface coeffs="105.08" id="903" type="y-plane"/>
+  </geometry>
+  <settings>
+    <run_mode>fixed source</run_mode>
+    <particles>235655</particles>
+    <batches>20</batches>
+    <source file="/Users/kavyawadhwa/geant4-python-application/examples/cmfx_recreation/results/stage_a/sphere_source.h5" strength="1.0" type="file"/>
+    <surf_source_write>
+      <surface_ids>901 902 903</surface_ids>
+      <max_particles>50000000</max_particles>
+      <cellto>10</cellto>
+    </surf_source_write>
+  </settings>
+  <tallies>
+    <filter id="1" type="cell">
+      <bins>10</bins>
+    </filter>
+    <filter id="2" type="energy">
+      <bins>1e-05 1.778279410038923e-05 3.1622776601683795e-05 5.623413251903491e-05 0.0001 0.00017782794100389227 0.00031622776601683794 0.0005623413251903491 0.001 0.0017782794100389228 0.0031622776601683794 0.005623413251903491 0.01 0.01778279410038923 0.03162277660168379 0.05623413251903491 0.1 0.1778279410038923 0.31622776601683794 0.5623413251903491 1.0 1.7782794100389228 3.1622776601683795 5.623413251903491 10.0 17.78279410038923 31.622776601683793 56.23413251903491 100.0 177.82794100389228 316.22776601683796 562.341325190349 1000.0 1778.2794100389228 3162.2776601683795 5623.413251903491 10000.0 17782.794100389227 31622.776601683792 56234.13251903491 100000.0 200000.0 250000.0 300000.0 350000.0 400000.0 450000.0 500000.0 550000.0 600000.0 650000.0 700000.0 750000.0 800000.0 850000.0 900000.0 950000.0 1000000.0 1050000.0 1100000.0 1150000.0 1200000.0 1250000.0 1300000.0 1350000.0 1400000.0 1450000.0 1500000.0 1550000.0 1600000.0 1650000.0 1700000.0 1750000.0 1800000.0 1850000.0 1900000.0 1950000.0 2000000.0 2050000.0 2100000.0 2150000.0 2200000.0 2250000.0 2300000.0 2350000.0 2400000.0 2450000.0 2500000.0 2550000.0 2600000.0</bins>
+    </filter>
+    <tally id="1" name="np scatter spectrum">
+      <filters>1 2</filters>
+      <nuclides>H1</nuclides>
+      <scores>elastic</scores>
+    </tally>
+  </tallies>
+</model>
